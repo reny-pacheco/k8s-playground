@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  cloud-server:
+    build: ./server
+    restart: on-failure
+    environment:
+      - API_VERSION=v1.0
+    ports:
+      - 8000:8000
+  cloud-client:
+    build: ./client
+    restart: on-failure
+    depends_on:
+      - server
+    ports:
+      - 3000:3000
