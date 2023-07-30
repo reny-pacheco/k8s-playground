@@ -12,6 +12,6 @@ services:
     build: ./client
     restart: on-failure
     depends_on:
-      - server
+      - cloud-server
     ports:
       - 3000:3000
