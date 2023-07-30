@@ -14,7 +14,7 @@ Prerequisite: Docker
    <img src="./apps/client/public/images/app.png" width="500">
 1. Clicking on one of the services will trigger the display of its description..
    <img src="./apps/client/public/images/app_desc.png" width="500">
-1. In case an error message appears when clicking on a service, please verify the server's port number or modify the **VITE_API_URL** environment
+1. In case an error message appears when clicking on a service, please verify the server's port number or modify the **VITE_API_URL** environment variable in client's docker file.
 
    <img src="./apps/client/public/images/error.png" width="500">
 
